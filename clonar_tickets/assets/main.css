@@ -1,0 +1,91 @@
+/* Estilos gerais do body e html para garantir que ocupem 100% da altura */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.data {
+    color: #363;
+    padding-left: 6px;
+}
+
+/* Centraliza o contêiner que envolve o campo de título e o botão */
+#clonar-ticket-container {
+    display: flex;
+    flex-direction: column; /* Organiza os elementos em uma coluna */
+    justify-content: center; /* Centraliza verticalmente */
+    align-items: center; /* Centraliza horizontalmente */
+    height: 100%; /* Ocupa toda a altura da tela */
+    padding: 20px; /* Adiciona espaçamento ao redor */
+    box-sizing: border-box; /* Inclui padding na largura total do contêiner */
+}
+
+/* Estilos para o campo de título */
+#novo-titulo {
+    width: 100%; /* Ocupa toda a largura possível */
+    max-width: 300px; /* Define uma largura máxima */
+    padding: 10px;
+    margin-bottom: 15px; /* Adiciona espaço abaixo do campo de título */
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Estilos para o botão de clonar o ticket */
+#clonar-ticket-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #2196F3; /* Azul para o botão de clonar o ticket */
+    color: white;
+    transition: background-color 0.3s ease;
+    max-width: 300px; /* Define uma largura máxima igual à do campo */
+    width: 100%; /* O botão ocupa toda a largura possível */
+}
+
+#clonar-ticket-btn:hover {
+    background-color: #1976D2; /* Azul mais escuro ao passar o mouse */
+}
+
+/* Estilos do modal */
+#modal-confirm {
+    display: none;
+    position: fixed;
+    z-index: 1000; /* Certifique-se de que o modal está acima de outros conteúdos */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#modal-content {
+    background-color: #fff;
+    margin: 0 auto;
+    padding: 10px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 200px;
+    border-radius: 8px; /* Adiciona bordas arredondadas */
+}
+
+#modal-content p {
+    margin: 0 0 10px 0; /* Margem inferior para o parágrafo */
+}
+
+#modal-content button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

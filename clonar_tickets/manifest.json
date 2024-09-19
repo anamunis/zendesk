@@ -1,0 +1,23 @@
+{
+  "name": "Clonar Ticket App",
+  "author": {
+    "name": "Ana Pinna",
+    "email": "apinna@autodoc.com.br"
+  },
+  "version": "1.0.0",
+  "frameworkVersion": "2.0",
+  "defaultLocale": "en",
+  "private": true,
+  "location": {
+    "support": {
+      "ticket_sidebar": {
+        "url": "assets/iframe.html",
+        "flexible": true,
+        "height": 400
+      }
+    }
+  },
+  "permissions": {
+    "tickets": "write"
+  }
+}
